@@ -1,7 +1,6 @@
 package br.com.cooperativeapi.service.topic;
 
 import br.com.cooperativeapi.entity.topic.Topic;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
