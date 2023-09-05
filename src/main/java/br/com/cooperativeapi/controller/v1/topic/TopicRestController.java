@@ -38,11 +38,10 @@ public class TopicRestController {
         );
     }
 
-    @GetMapping("/{topicId}/total_votes")
-    public ResponseEntity<?> totalVotes(@PathVariable("topicId") Integer topicId) {
-//        return ResponseEntity.ok(
-//                this.topicService.getTotalVotes(topicId)
-//        );
-        return null;
+    @GetMapping("/{topicId}")
+    public ResponseEntity<?> findById(@PathVariable("topicId") Integer topicId) {
+        return ResponseEntity.ok(
+                this.topicService.findById(topicId)
+        );
     }
 }
