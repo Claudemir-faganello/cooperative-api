@@ -2,7 +2,6 @@ package br.com.cooperativeapi.service.session;
 
 import br.com.cooperativeapi.entity.session.Session;
 import br.com.cooperativeapi.exception.ForbiddenException;
-import br.com.cooperativeapi.exception.ObjectNotFoundException;
 import br.com.cooperativeapi.repository.session.SessionRepository;
 import br.com.cooperativeapi.service.topic.TopicService;
 import org.springframework.beans.factory.annotation.Value;
