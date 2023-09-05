@@ -118,6 +118,26 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Busca topico por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/topic/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"topic",
+						"4"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
