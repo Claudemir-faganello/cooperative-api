@@ -1,7 +1,6 @@
 package br.com.cooperativeapi.controller.v1.topic;
 
 import br.com.cooperativeapi.dto.topic.TopicDTO;
-import br.com.cooperativeapi.dto.vote.VoteDTO;
 import br.com.cooperativeapi.service.topic.TopicService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
