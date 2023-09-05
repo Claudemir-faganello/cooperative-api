@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "e1f28097-d76d-4842-b7de-2a9b440123a4",
+		"name": "cooperative-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29001287"
+	},
+	"item": [
+		{
+			"name": "Cria uma nova pauta (topico)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Topico def\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/topic",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"topic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LIsta todas as pautas (topicos)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/topic",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"topic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "abre sessão para uma pauta(topico)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/session/11",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"session",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Salva voto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"choose\": \"Sim\",\n    \"associatedId\":\"3333\",\n    \"topicId\": 11\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/vote",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"vote"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "swagger",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
