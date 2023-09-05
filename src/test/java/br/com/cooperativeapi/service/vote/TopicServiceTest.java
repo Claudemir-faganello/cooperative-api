@@ -1,18 +1,10 @@
 package br.com.cooperativeapi.service.vote;
 
-import br.com.cooperativeapi.client.associated.AssociatedAPI;
-import br.com.cooperativeapi.entity.session.Session;
 import br.com.cooperativeapi.entity.topic.Topic;
-import br.com.cooperativeapi.entity.vote.Vote;
-import br.com.cooperativeapi.entity.vote.VotePK;
 import br.com.cooperativeapi.repository.topic.TopicRepository;
-import br.com.cooperativeapi.repository.vote.VoteRepository;
-import br.com.cooperativeapi.service.session.SessionService;
 import br.com.cooperativeapi.service.topic.TopicService;
 import br.com.cooperativeapi.service.topic.TopicServiceImpl;
-import br.com.cooperativeapi.utils.SessionUtils;
 import br.com.cooperativeapi.utils.TopicUtils;
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -22,7 +14,6 @@ import org.mockito.junit.MockitoJUnitRunner;
 import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
